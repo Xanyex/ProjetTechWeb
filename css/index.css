@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+#Contenu {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #0077b6; 
+    border-bottom: 4px solid #ffc300; 
+}
+
+
+
+#listHeader {
+    display: flex;
+    gap: 30px;
+}
+
+#listHeader a {
+    color: #fff; 
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ffc300; 
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#listHeader a:hover {
+    background-color: #005f99; 
+    border-color: #ffb300; 
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#auteur, #histoire {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #0077b6; 
+    border-radius: 8px;
+    background-color: #f0f8ff; 
+    min-width: 300px;
+}
+
+#auteur img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 400px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+#imagehistoire img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+
+h1, h2, h3 {
+    color: #0077b6; 
+    margin-bottom: 15px;
+}
+
+#textehistoire {
+    margin-top: 20px;
+}
+
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #ffc300; 
+    background-color: #0077b6; 
+    color: #fff;
+}
+
+#crunchyroll img {
+    vertical-align: middle;
+}
+
+#pdf a {
+    color: #ffc300; 
+    text-decoration: none;
+}
+
+#pdf a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #listHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logoHeader {
+        margin-bottom: 20px;
+    }
+
+    #auteur img, #imagehistoire img {
+        max-width: 100%;
+        height: auto;
+    }
+}

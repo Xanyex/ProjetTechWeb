@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+#Contenu {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #0077b6; 
+    border-bottom: 4px solid #ffc300; 
+}
+
+
+
+#listHeader {
+    display: flex;
+    gap: 30px;
+}
+
+#listHeader a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ffc300;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#listHeader a:hover {
+    background-color: #005f99;
+    border-color: #ffb300;
+}
+
+
+#titresagas {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #0077b6;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#titresagas h1 {
+    color: #ffc300;
+}
+
+
+#contenusagas {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#tablesagas {
+    flex: 2;
+    background-color: #f0f8ff;
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#tablesagas table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tablesagas th, #tablesagas td {
+    border: 2px solid #0077b6;
+    padding: 10px;
+    text-align: left;
+}
+
+#tablesagas th {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+#tablesagas td {
+    background-color: #f0f8ff;
+}
+
+
+#imagesaagas, #image2 {
+    flex: 1;
+    background-color: #f0f8ff;
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+#imagesaagas img, #image2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #ffc300;
+    background-color: #0077b6;
+    color: #fff;
+}
+
+#crunchyroll img {
+    vertical-align: middle;
+}
+
+#pdf a {
+    color: #ffc300;
+    text-decoration: none;
+}
+
+#pdf a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    #contenusagas {
+        flex-direction: column;
+    }
+}
